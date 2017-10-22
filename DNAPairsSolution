@@ -1,0 +1,8 @@
+function dnaPairs(){
+const charSequence = str.split("");
+  const map = {C:'G', G:'C', T:'A', A:'T'};
+  const pairedUp = charSequence.map(character => {
+    return [character, map[character]];
+  });
+  return pairedUp;
+}
